@@ -17,12 +17,12 @@ describe NumberTool do
 
     it "it can return the difference of two numbers" do
       object = NumberTool.new(2, 5)
-      object.sum.should == -3
+      object.difference.should == -3
     end
 
     it "it can return the difference of two numbers" do
       object = NumberTool.new(6, 5)
-      object.sum.should == 1
+      object.difference.should == 1
     end
   end
 
