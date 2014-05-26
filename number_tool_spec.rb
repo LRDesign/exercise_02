@@ -30,7 +30,7 @@ describe NumberTool do
     it "When I create one of them the instance count should increase by one" do
       expect do
         NumberTool.new(1,1)
-      end.to change { NumberTool.instance_count }.by)(1)
+      end.to change { NumberTool.instance_count }.by(1)
     end
 
     it "When I create three of them the instance count should increase by three" do
@@ -38,7 +38,7 @@ describe NumberTool do
         NumberTool.new(1,1)
         NumberTool.new(1,1)
         NumberTool.new(1,1)
-      end.to change { NumberTool.instance_count }.by)(3)
+      end.to change { NumberTool.instance_count }.by(3)
     end
   end
 
