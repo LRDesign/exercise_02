@@ -27,16 +27,18 @@ describe NumberTool do
   end
 
   describe "instance counting" do
-    it "When I create one of them the class should know that" do
-      NumberTool.new(1,1)
-      NumberTool.instance_count.should == 1
+    it "When I create one of them the instance count should increase by one" do
+      expect do
+        NumberTool.new(1,1)
+      end.to change { NumberTool.instance_count }.by)(1)
     end
 
-    it "When I create three of them the class should know that" do
-      NumberTool.new(1,1)
-      NumberTool.new(1,1)
-      NumberTool.new(1,1)
-      NumberTool.instance_count.should == 3
+    it "When I create three of them the instance count should increase by three" do
+      expect do
+        NumberTool.new(1,1)
+        NumberTool.new(1,1)
+        NumberTool.new(1,1)
+      end.to change { NumberTool.instance_count }.by)(3)
     end
   end
 
