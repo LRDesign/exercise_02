@@ -1,0 +1,13 @@
+Today's exercise: more practice on instance and class contexts.
+
+We're going to make a class that does two things:
+   1) Instances are instantiated with two numbers, and the object can do math on them.
+
+   2) The class keeps track of how many instances there are
+
+I'm providing specs, you goal is: 
+  1) Fill in the class that makes the specs pass
+
+  2) Add a comment above each method explaining whether it's a class method or an instance method, and why you picked that option.
+ 
+  3) Add a comment above each variable (in the first place you use it), explaining whether it's a class variable or an instance variable, and why you picked that option.  
